@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="form-quantity">
+            <label class="form-label" for="quantity">Nhập vào số phép tính bạn muốn thực hiện</label>
+            <input type="number" placeholder="Nhập giá trị trong khoảng 1 đến 100" class="form-input quantity-input" id="quantity">
+            <span class="form-msg show-error-msg invalid"></span>
+        </div>
+        <div class="form-numbers invisible">
+            <div class="form-group form-number">
+                <label for="first-number" class="form-label">Nhập vào số thứ 1</label>
+                <input type="number" id="first-number" class="form-input first-number" placeholder="Nhập giá trị lớn hơn hoặc bằng 1">
+                <span class="form-msg show-error-msg invalid"></span>
+            </div>
+            <div class="form-group form-number">
+                <label for="second-number" class="form-label">Nhập vào số thứ 2</label>
+                <input type="number" id="second-number" class="form-input second-number" placeholder="Nhập giá trị bé hơn hoặc bằng 1.000.000" disabled>
+                <span class="form-msg show-error-msg invalid"></span>
+            </div>
+            <div class="form-group form-number">
+                <label for="third-number" class="form-label">Nhập vào số thứ 3</label>
+                <input type="number" id="third-number" class="form-input third-number" placeholder="Nhập giá trị trong khoảng từ 1 đến 1.000.000.007" disabled>
+                <span class="form-msg show-error-msg invalid"></span>
+            </div>
+            <div class="form-msg">** Hãy gõ phím "Enter" sau mỗi lần nhập</div>
+            <div class="form-msg count-remain-input"></div>
+        </div>
+        <div class="remainder invisible"></div>
+        <button class="reset-btn">reset <span style="transform: rotate(90deg); display: inline-block;">&#8635</span></button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
